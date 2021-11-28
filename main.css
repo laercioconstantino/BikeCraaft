@@ -1,0 +1,343 @@
+/* Zerando as estilizações padrões do browser */
+@keyframes bounce{
+    0%, 20%, 60%, 100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+    80% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+*{
+padding: 0px;
+margin: 0px;
+box-sizing: border-box;
+}
+html{
+scroll-behavior: smooth;
+}
+/* Inicio das estilizações do navbar*/
+header{
+padding: 15px 0px;
+width: 100%;
+background-color: rgb(61, 65, 59);
+}
+header nav ul{
+list-style: none;
+text-align:center;
+}
+header nav ul li{
+display: inline;
+}
+header nav ul li a{
+background: #009c3d;
+text-decoration: none;
+text-transform: uppercase;
+color: #fff;
+width: 120px;
+font-family: Arial;
+font-style:normal;
+font-size: 17px;
+padding: 2px 10px;
+display: inline-block;
+transition: all .5s ease-out;
+}
+header nav ul li a:hover{
+text-decoration: none;
+background-color: rgba(0, 0, 0, 0);
+color: #009c3d;
+box-shadow: inset 0 0 0 3px #009c3d;
+}
+
+/*Inicio das estlizações das sections*/
+section{
+display: flex;
+height: 600px;
+width: 100%;
+}
+section:nth-child(even){
+    background-color: #000;
+}
+section:nth-child(7){
+    background-color: #000;
+}
+
+/*Inicio das estlizações do banner - Home*/
+.banner img{
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+.h1-centro{
+    position: absolute;
+    top: 32%;
+    left: 32%;
+    text-align: center;
+    background-color: rgb ( 0,0,0,0.5);
+}
+.banner h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 36px; 
+}
+.p-centro{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:initial;
+    text-transform: uppercase;
+    color: #fff;
+    position: absolute;
+    top: 42%;
+    left: 36%;
+    transition: translate(-50%,-50%);
+    text-align: center;
+    background-color:( 0,0,0,0.5);
+}
+.bot-história{ 
+    position: absolute;
+    top: 50%;
+    left: 46%;
+    transition: all .5s ease-out;
+    text-align: center;
+}
+.bot-história:hover{
+    animation: bounce 1s;
+}
+
+/*Inicio das estilizações da section história*/
+.história{
+    padding: 50px;
+    width: 100%;
+    background: #FFF;
+}
+.h2-história{
+    font-family: sans-serif,tahoma;
+    font-size: 24px;
+    line-height: normal;
+    font-weight: bold;
+    letter-spacing: .1em;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.história p{
+    font-family: sans-serif,tahoma;
+    text-transform: uppercase;
+    color: #000;
+    transition: translate(-50%,-50%);
+    text-align: center;
+    background-color:( 0,0,0,0.5);
+}
+.história img{
+    height: 250px;
+    position: absolute;
+    left: 335px;
+    transition: translate(-50%,-50%);
+    text-align: center;
+    background-color: rgb ( 0,0,0,0.5);
+}
+
+/*Inicio das estlizações da section galeria*/
+.galeria{
+    padding: 50px;
+    width: 100%;
+    background: #000;
+}
+.galeria img{
+    height: 220px;
+    margin: 5px;
+}
+.subtitulo{
+    font-family: sans-serif,tahoma;
+    font-size: 24px;
+    line-height: 20px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #fec63e;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/*Inicio das estilizações da section info*/
+.texto-1{
+    font-family:'Josefin Sans', sans-serif;;
+    font-size: 24px;
+    line-height: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.info img{
+    height: 250px;
+    left: 335px;
+}
+.texto-2 p{
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 10px;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    color: #000;
+    text-transform:capitalize;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/*Inicio das estilizações da section contact*/
+.texto-4{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    color: #fec63e;
+    text-transform:capitalize;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.contato_form {
+    padding-right: 0px;
+    margin-bottom: 40px
+}
+.contato_form label {
+    display: inline;
+    position: relative;
+    padding: 0 15px;
+    top: 20%;
+    left: 400px;
+    color: #FFF;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 4px;
+}
+.contato_form input {
+    color: #FFF;
+    display: inline;
+    position: relative;
+    padding: 0 15px;
+    top: 20%;
+    left: 400px;
+    display: block;
+    width: 600px;
+    border: 4px solid #fec63e;
+    background: none;
+    padding: 7px 10px;
+    margin-bottom: 10px;
+    outline: none;
+    font-size: 14px;
+    font-family: Georgia, "Times New Roman", serif;
+}
+.contato_form textarea{
+    color: #FFF;
+    display: inline;
+    position: relative;
+    padding: 0 15px;
+    top: 20%;
+    left: 265px;
+    width: 600px;
+    height: 120px;
+    border: 4px solid #fec63e;
+    background: none;
+    padding: 7px 10px;
+    margin-bottom: 20px;
+    outline: none;
+    font-size: 14px;
+    font-family: Georgia, "Times New Roman", serif;
+}
+.bot-enviar{
+    margin-bottom: 10px;
+    position: absolute;
+    width: 134px;
+    left: 400px;
+    background: none;
+    border: 3px solid #fec63e;
+    padding: 10px 30px;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .1em;
+    transition: all .5s ease
+}
+.bot-enviar:hover{
+    color: #fec63e;
+}
+
+/*Inicio das estilizações do footer*/
+.primeiro-footer{
+    margin: 0;
+    padding: 0;
+    background-color: #272727;
+    width: 100%;
+    height: 100px;
+}
+.social-links{
+    display: inline;
+}
+.social-itens{
+    background-color: #272727;
+    display: inline;
+}
+.social-itens a{
+    display: inline;
+    position: relative;
+    padding: 0 15px;
+    top: 20%;
+    left: 540px;
+    background-color: #272727;
+    color: #FFF;
+    margin: 5px;
+    transition: all 0.5s;
+    font-size: 30px;
+    text-decoration: none;
+}
+.social-itens a:hover{
+    color: #000;
+}
+.footer-meio{
+    background-color: #272727;
+    display: flex;
+    width: 560px;
+    height: 60px;
+    margin: auto;
+}
+.footer-meio ul{
+    display: flex;
+}
+.meio-itens{
+    list-style: none;
+}
+.meio-itens a{
+    text-decoration:none;
+    padding: 0px 15px;
+    font-size: 18px;
+    color: white;
+    transition: all .20s;
+}
+.meio-itens a:hover{
+    color: #6cccc6;
+}
+.segundo-footer{
+    font-family: sans-serif,tahoma;
+    padding: 15px;
+    text-align: center;
+    color: #FFF;
+    font-size: 18px;
+    background-color: #3f3f3f;
+}
+/*Fim das estilizações CSS*/
